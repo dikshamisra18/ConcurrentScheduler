@@ -396,7 +396,6 @@ ConcurrentScheduler/
 ├── main.go                 # Application entry point
 ├── scheduler.go            # Scheduler implementation
 ├── worker.go               # Worker pool implementation
-├── dispatcher.go           # Job dispatcher
 ├── priority_queue.go       # Heap-based priority queue
 ├── job.go                  # Job definition
 ├── job_executor.go         # Job execution logic
@@ -404,12 +403,14 @@ ConcurrentScheduler/
 ├── metrics.go              # Scheduler metrics
 ├── worker_status.go        # Worker status model
 │
-├── frontend/
+├── web/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
 └── README.md
+|__ assets/
+    |__ Screenshot.png
 ```
 
 ## Running the Project
