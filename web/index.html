@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurrent Job Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Concurrent Job Scheduler</h1>
+    
+    <!-- 
+    METRICS 
+    -->
+
+    <h2>Metrics</h2>
+
+    <div id="metrics">
+
+        <div class="card">
+            <h3>Completed</h3>
+            <p id="completed">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Failed</h3>
+            <p id="failed">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Queued</h3>
+            <p id="queued">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Throughput</h3>
+            <p id="throughput">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Utilization</h3>
+            <p id="utilization">0%</p>
+        </div>
+
+    </div>
+
+    <!-- 
+    WORKERS STATUS 
+    -->
+
+    <h2>Workers</h2>
+    <div id="workers"></div>
+
+    <hr>
+
+    <h2>Benchmark</h2>
+
+    <h3>Workers</h3>
+
+    <label><input type="radio" name="workers" value="1"> 1</label>
+    <label><input type="radio" name="workers" value="2"> 2</label>
+    <label><input type="radio" name="workers" value="4" checked> 4</label>
+    <label><input type="radio" name="workers" value="8"> 8</label>
+
+    <h3>Jobs</h3>
+
+    <label><input type="radio" name="jobs" value="50"> 50</label>
+    <label><input type="radio" name="jobs" value="100" checked> 100</label>
+    <label><input type="radio" name="jobs" value="150"> 150</label>
+    <label><input type="radio" name="jobs" value="200"> 200</label>
+
+    <br><br>
+
+    <button onclick="runBenchmark()">
+        Run Benchmark
+    </button>
+
+    <p id="benchmarkStatus">
+        Status: Idle
+    </p>
+
+    <hr>
+
+    <h2>Benchmark Results</h2>
+
+    <table border="1" cellpadding="8">
+        <thead>
+            <tr>
+                <th>Run</th>
+                <th>Workers</th>
+                <th>Jobs</th>
+                <th>Time (s)</th>
+                <th>Throughput</th>
+                <th>Utilization</th>
+                <th>Completed</th>
+                <th>Failed</th>
+            </tr>
+        </thead>
+
+        <tbody id="benchmarkTable">
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
