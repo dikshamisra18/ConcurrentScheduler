@@ -463,9 +463,5 @@ From the dashboard, you can:
 
 ### Dashboard
 
-*(Add dashboard screenshot here.)*
-
-### Benchmark Results
-
-*(Add benchmark results screenshot here.)*
+![Dashboard](assets/screenshot.png)
 
