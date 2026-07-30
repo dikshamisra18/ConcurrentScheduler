@@ -445,7 +445,7 @@ From the dashboard, you can:
 * Configure benchmark parameters
 * Compare benchmark results
 
-## Screenshots
+## Screenshot
 
 ### Dashboard
 
