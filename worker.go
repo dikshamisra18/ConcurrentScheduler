@@ -92,8 +92,6 @@ func worker(id int, scheduler *Scheduler) {
 			}
 			fmt.Printf("✅ Worker %d: Job %d completed\n", id, job.ID)
 
-			fmt.Printf("Worker %d finished job %d\n", id, job.ID)
-
 			scheduler.Mutex.Lock()
 			scheduler.Workers[id].State = "Idle"
 			scheduler.Workers[id].JobID = 0
