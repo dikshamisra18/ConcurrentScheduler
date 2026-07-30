@@ -463,5 +463,5 @@ From the dashboard, you can:
 
 ### Dashboard
 
-![Dashboard](assets/screenshot.png)
+![Dashboard](assets/Screenshot.png)
 
