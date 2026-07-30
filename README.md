@@ -190,7 +190,7 @@ The `JobSignal` channel is used to notify the dispatcher whenever a new job is s
 
 #### JobQueue
 
-The dispatcher removes the highest-priority job from the priority queue and places it into the buffered `JobQueue`. Workers continuously listen on this channel and receive jobs as soon as they become available.
+The dispatcher removes the highest-priority job from the priority queue and places it into `JobQueue`. Workers continuously listen on this channel and receive jobs as soon as they become available.
 
 Using channels eliminates the need for explicit synchronization while transferring jobs between concurrent components.
 
