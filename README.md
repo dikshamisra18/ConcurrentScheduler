@@ -10,21 +10,6 @@ A web dashboard provides live metrics, worker status, throughput, utilization, a
 
 ## Features
 
-- Configurable worker pool
-- Priority-based job scheduling using a heap
-- Dispatcher-based scheduling architecture
-- Retry mechanism with exponential backoff
-- Job timeout and cancellation using `context.Context`
-- Graceful shutdown without interrupting active jobs
-- Live metrics dashboard
-- Worker status monitoring
-- Benchmarking with configurable worker and job counts
-- Throughput and worker utilization tracking
-
----
-
-## Features
-
 * Configurable worker pool with dynamic concurrency levels
 * Priority-based job scheduling using a heap-based priority queue
 * Dispatcher goroutine for centralized job scheduling
